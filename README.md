@@ -33,23 +33,31 @@ dependencies {
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 ~~~
-### 代码中使用
+### 初始化
 ~~~
         verification = findViewById(R.id.verification);
         verification.init(this, VerificationType.LENGTH_LONG);
-        verification.setEndListener(new VerificationTypeListener() {
-            @Override
-            public void onFinish(String result) {
-                if (!result.equals("2333")){
-                    verification.setErrType();
-                }
-            }
-        });
 ~~~
 变量名  | 对应验证码长度
 ---- | ----- 
 VerificationType.LENGTH_LONG  | 6位
 VerificationType.LENGTH_SHORT  | 4位
+
+### 验证码输入完成时的回调
+~~~
+verification.setEndListener(new VerificationTypeListener() {
+            @Override
+            public void onFinish(String result) {
+                if (!result.equals(**需校对内容**)){
+                    verification.setErrType();
+                }else{
+                    ...
+                }
+            }
+        });
+~~~
+在setEndListener中设置监听，重写onFinish方法处理输入完成后的状态。
+setErrType为调用默认错误处理。
 ## 设置参数
 如果对默认验证码框背景不满意，可以在代码中对部分参数进行更改
 
