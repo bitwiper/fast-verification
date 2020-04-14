@@ -43,8 +43,8 @@ dependencies {
 ~~~
 变量名  | 对应验证码长度
 ---- | ----- 
-<p align="center">VerificationType.LENGTH_LONG</p>|<p align="center">6位</p>
-<p align="center">VerificationType.LENGTH_SHORT</p>|<p align="center">4位</p>
+VerificationType.LENGTH_LONG|6位
+VerificationType.LENGTH_SHORT|4位
 
 ### 验证码输入完成时的回调
 ~~~
