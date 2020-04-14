@@ -1,6 +1,6 @@
 # fast-verification
 
-<p align="center">![demo](https://img-blog.csdnimg.cn/20200414114451477.gif#pic_center)</p>
+![demo](https://img-blog.csdnimg.cn/20200414114451477.gif#pic_center)
 
 ## 依赖到项目
 #### 项目根gradle中添加
