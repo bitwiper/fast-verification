@@ -1,4 +1,5 @@
 # fast-verification
+![img]("https://img-blog.csdnimg.cn/20200414114451477.gif")
 ## 依赖到项目
 #### 项目根gradle中添加
 ~~~
