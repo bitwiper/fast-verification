@@ -15,13 +15,13 @@ allprojects {
 ~~~
 #### 在需要使用的module层级的gradle中添加
 ~~~
-implementation 'com.github.sariki-L:fast-verification:1.0'
+implementation 'com.github.sariki-L:fast-verification:1.1'
 ~~~
 示例：
 ~~~
 dependencies {
     ...
-    implementation 'com.github.sariki-L:fast-verification:1.0'
+    implementation 'com.github.sariki-L:fast-verification:1.1'
 }
 ~~~
 ## 正式使用
